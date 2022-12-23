@@ -29,3 +29,6 @@ Route::get('product', [ProductController::class, 'index']);
 
 //Route for details page
 Route::get('detail/{id}', [ProductController::class, 'detail']);
+
+//Route for add to cart page
+Route::post('add_to_cart', [ProductController::class, 'addToCart']);
