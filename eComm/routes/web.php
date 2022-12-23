@@ -24,5 +24,8 @@ Route::view('login', 'login');
 //Route for login page
 Route::post('login', [UserController::class, 'login']);
 
-//Rout for product page
+//Route for product page
 Route::get('product', [ProductController::class, 'index']);
+
+//Route for details page
+Route::get('detail/{id}', [ProductController::class, 'detail']);
