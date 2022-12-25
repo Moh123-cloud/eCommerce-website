@@ -61,6 +61,12 @@
 
         height: 300px
     }
+
+    .cart-list-divider {
+        border-bottom: 2px #cccccc;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
 </style>
 
 </html>
