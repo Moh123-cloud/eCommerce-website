@@ -1,15 +1,16 @@
 @extends('master');
 
 @section('content')
-    <div class="custom-product">
+    <div class="container custom-product">
         <div class="bd-example">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    <li data-target="myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="myCarousel" data-slide-to="1"></li>
+                    <li data-target="myCarousel" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-item corousel-inner">
+
+                <div class="carousel-item carousel-inner">
                     @foreach ($products as $item)
                         <div class="item {{ $item['id'] == 1 ? 'active' : '' }}">
 
