@@ -15,11 +15,16 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/login', function () {
+    return view('login');
 });
 
-Route::view('login', 'login');
+Route::get('/logout', function () {
+    Session::forget('user');
+    return redirect('login');
+});
+
+
 
 //Route for login page
 Route::post('login', [UserController::class, 'login']);
