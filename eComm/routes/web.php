@@ -24,7 +24,11 @@ Route::get('/logout', function () {
     return redirect('login');
 });
 
+//Route for register view
+Route::view('register', 'register');
 
+//Route for register page
+Route::post('register', [UserController::class, 'register']);
 
 //Route for login page
 Route::post('login', [UserController::class, 'login']);
