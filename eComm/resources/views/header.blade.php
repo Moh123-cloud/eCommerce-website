@@ -19,10 +19,10 @@ if (Session::has('user')) {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="nav navbar-nav mr-auto ">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="product">Home</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Order</a>
+                <a class="nav-link" href="myorders">Order</a>
             </li>
         </ul>
         <form class="navbar-form navbar-left">

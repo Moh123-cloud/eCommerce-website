@@ -40,3 +40,16 @@ Route::post('add_to_cart', [ProductController::class, 'addToCart']);
 
 //Route for cart list
 Route::get('cartlist', [ProductController::class, 'cartList']);
+
+//Route for Remove from cart
+Route::get('removecart/{id}', [ProductController::class, 'removeCart']);
+
+//Route for order now
+Route::get('ordernow', [ProductController::class, 'orderNow']);
+
+
+//Route for order place
+Route::post('orderplace', [ProductController::class, 'orderPlace']);
+
+//Route for order place
+Route::get('myorders', [ProductController::class, 'myOrders']);
